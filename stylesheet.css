@@ -1,0 +1,932 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+
+    height: 5100px;
+    font-size: 16px;
+    font-style: inherit;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-rendering: optimizeLegibility;
+
+}
+
+header {
+    position: fixed;
+    height: 150px;
+    width: 100%;
+}
+
+/* Header row1 css start here*/
+
+.header-row1 {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.context-row1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 1519px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: row wrap;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 35px;
+    padding-left: 12px;
+}
+
+
+.logo img:hover {
+    cursor: pointer
+}
+
+.logo img {
+
+    width: 140px;
+    height: 44px;
+}
+
+div .searchbar {
+    display: flex;
+}
+
+.searchbar input {
+    font-family: inherit;
+    font-size: medium;
+    padding: 6px 12px;
+    height: 42px;
+    width: 630px;
+    border-right: 0;
+    border: .5px solid #00a651;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.searchbar button {
+
+    align-items: center;
+    border: 1px solid #00a651;
+    border-radius: 0 4px 4px 0;
+    background-color: #00a651;
+    width: 42px;
+    height: 42px;
+    border-left: 0;
+}
+
+.searchbar button:hover {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    background-color: #3fb679;
+}
+
+.btn-header {
+
+    display: flex;
+}
+
+.btn-header button {
+    font-family: inherit;
+    font-size: .75rem;
+    font-weight: bold;
+    width: 120px;
+    height: 25px;
+    border: 1px solid #00a651;
+    border-radius: 4px 0 0 4px;
+    background-color: #00a651;
+    color: #fff
+}
+
+button.btn1:hover {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    background-color: #3fb679;
+}
+
+button.btn2 {
+    color: #00a651;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+}
+
+button.btn2:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: .3s ease-in-out;
+    background-color: #00a651;
+}
+
+div .log-header {
+    display: flex;
+}
+
+div .log-header:hover {
+    cursor: pointer;
+}
+
+.log-header a {
+    text-decoration: none;
+    color: #00a651;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.log-header a:hover {
+    transition: .3s ease-in-out;
+    color: #010e07;
+}
+
+.wishlist:hover img {
+
+    border: 1px solid #12e477;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+div .cart-header {
+    padding-right: 50px;
+}
+
+.cart-header button {
+    padding-top: 5px;
+    align-items: center;
+    border: 1px solid #00a651;
+    border-radius: 50%;
+    background-color: #00a651;
+    width: 50px;
+    height: 50px;
+    border-left: 0;
+}
+
+.cart-header button:hover {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: #108a4d;
+    transition: .3s ease-in-out;
+}
+
+/* Header row2 css start here*/
+.header-row2 {
+    width: 100%;
+    display: flex;
+    background-color: #00a651;
+
+}
+
+.context-row2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: row wrap;
+    width: 1519px;
+    height: 45px;
+    background-color: #00a651;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    padding-right: px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* nav col1 starts here*/
+div .col1 {
+    display: flex;
+    padding-left: 0px;
+}
+
+.cf-cn {
+
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.cf-cn button {
+    text-align-last: center;
+    padding-top: 3px;
+    background-color: #00a651;
+    outline: none;
+    border: 0;
+}
+
+.cf-cn button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    padding-top: 7px;
+}
+
+.cf-cn-content {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 7px;
+    align-items: center;
+    background-color: #00a651;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.cf-cn-content>a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.cf-cn-content>a:hover {
+    background-color: #e3dfdf
+}
+
+.cf-cn:hover .cf-cn-content {
+    visibility: visible;
+}
+
+.col1>a {
+    display: flex;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.col1>a:hover {
+    background-color: #0b713c;
+
+}
+
+
+div .navbar {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+
+}
+
+.nav .col1 a {
+    margin-top: 0px;
+
+}
+
+
+.nav .col1 img:hover {
+    transition: .3s ease-in-out;
+    margin-top: 4px;
+    background-color: #0b713c;
+}
+
+/* main menu starts here*/
+div .col2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Grocery starts here*/
+div .content1 {
+    display: flex;
+}
+
+div .grocery-wraper {
+    visibility: hidden;
+    left: 0;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.content1:hover .dropdown {
+    visibility: visible;
+
+
+}
+
+/* Freshfood starts here*/
+div .content2 {
+    display: flex;
+
+
+}
+
+div .fresh-wraper {
+    visibility: hidden;
+    left: 0;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.content2:hover .dropdown {
+    visibility: visible;
+
+}
+
+
+/* Electronics starts here*/
+div .content3 {
+    display: flex;
+
+
+}
+
+div .elec-wraper {
+    visibility: hidden;
+    left: 0;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.content3:hover .dropdown {
+    visibility: visible;
+
+}
+
+
+
+/* Mobiles starts here*/
+div .content4 {
+    display: flex;
+}
+
+div .mb-wraper {
+    visibility: hidden;
+    left: 0;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+
+.content4:hover .dropdown {
+    visibility: visible;
+
+}
+
+
+/* Home & Living starts here*/
+div .content5 {
+    display: flex;
+}
+
+div .hl-wrapper {
+    visibility: hidden;
+    left: 0;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.content5:hover .dropdown {
+    visibility: visible;
+}
+
+
+/* Start of Universal styles for nav col2 menu*/
+.menu-head:hover {
+    transition: .3s ease-in-out;
+    background-color: #0b713c;
+    padding: 0 4px;
+}
+
+ul {
+
+    list-style: none;
+}
+
+li {
+
+    padding-top: 6px;
+}
+
+.dropdown {
+    line-height: 20px;
+    border-bottom: 1px solid #0b713c;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s ease-in-out;
+    padding: 10px 20px;
+    visibility: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #010e07;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.dropdown li:hover {
+    color: #00a651;
+    transition: .3s ease-in-out;
+}
+
+.bar {
+    padding: px;
+    line-height: 14px;
+}
+
+.bar p {
+
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+}
+
+/* End of Universal styles for nav col2 menu*/
+
+
+
+/* starting nav col3 */
+div .col3 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.btn-deal button {
+    background-color: #ffcb03;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    text-transform: uppercase;
+    margin-right: 40px;
+
+}
+
+.btn-deal button:hover {
+    background-color: #a2850d;
+}
+
+div .location {
+    padding: 5px;
+    line-height: 30px;
+    font-size: smaller;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.location:hover {
+    background-color: #0b713c;
+}
+
+div .schedule {
+    margin-left: 90px;
+    padding: 5px;
+    line-height: 30px;
+    font-size: smaller;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.schedule img {
+    margin: 4px;
+}
+
+.schedule:hover {
+    background-color: #0b713c;
+}
+
+/* ending Nav col3 */
+
+/* opening container to beautify body */
+
+.container {
+
+    margin: 132px 0;
+    height: 3000px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+/* banner1- container*/
+
+.banner-container {
+    width: 100%;
+    height: 300px;
+
+}
+
+/* Styling for the scroller */
+
+.banner-item {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.banner-item {
+    flex: 0 0 auto;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+.banner-item:hover {
+    cursor: pointer;
+}
+
+.banner-btn {
+    gap: 35px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-btn button {
+    padding: 0 10px;
+    color: #ada1a1;
+    border: 5px solid #ada1a1;
+    border-radius: 4px;
+    background-color: #ada1a1;
+    margin-bottom: 20px;
+}
+
+.banner-btn button:hover {
+    color: #0b713c;
+    border-color: #0b713c;
+    border: 4px 1px solid;
+    border-radius: 4px;
+    background-color: #0b713c;
+}
+
+.featured {
+
+    justify-content: center;
+    display: flex;
+    width: 1519px;
+}
+
+
+
+.row-wrap {
+    border: 2px;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1300px;
+    height: 450px;
+    background-color: #c6c6c636;
+}
+
+.row-wrap h3 {
+    padding-left: 10px;
+}
+
+.cat1-content1,
+.cat1-content2 {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: row wrap;
+
+}
+
+.row-wrap img:hover {
+    border: 2px;
+    border-radius: 50%;
+    filter: grayscale(100%) brightness(0.5) sepia(10%) hue-rotate(180deg);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.cat-wrap {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-wrap span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.cat-wrap span:hover {
+    cursor: pointer;
+    color: #00a651;
+}
+
+
+/* product container starts*/
+.products {
+    margin-top: 30px;
+    width: 1519px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.product-container {
+    flex-wrap: wrap;
+    width: 210px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 8px 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.product-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.product-container:hover .product-discount {
+    color: #efecec;
+    transition: .3s ease-in-out;
+}
+
+
+/*discount tag image is here*/
+
+.product-discount {
+    text-align: left;
+    background-image: url(./img/discount-01.png);
+    background-position: left;
+    background-size: 90px 20px;
+    background-repeat: no-repeat;
+    margin: 0;
+
+    color: #fff;
+    font-weight: 600;
+}
+
+.product-container img {
+    padding-top: 8px;
+}
+
+.pname {
+    padding-right: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.pname:hover {
+    transition: .3s ease-in-out;
+    color: #0b713c
+}
+
+.fa-heart {
+    padding-left: 80px;
+}
+
+.fa:hover {
+    color: #0b713c;
+}
+
+.fa {
+    color: #ada1a1
+}
+
+.star-icon {
+    padding-right: 90px;
+}
+
+.product-sale-price {
+    padding-right: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: larger;
+    color: #108a4d
+}
+
+.discount-price {
+    font-weight: bold;
+    font-size: medium;
+    color: #847070;
+    padding-right: 110px;
+    text-decoration: line-through solid #0b713c;
+
+}
+
+.add-btn {
+
+    margin-top: 20px;
+}
+
+.add-btn button {
+    color: #00a651;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+}
+
+.add-btn button:hover {
+    background-color: #00a651;
+    color: #fff;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+/* product container ends*/
+
+
+/* Info & others*/
+
+.info-lulu {
+
+    padding: 0 50px;
+    width: 1519px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00a651;
+}
+
+.contact {
+    width: 1519px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contact-icon ul {
+    padding: 0 6px;
+    color: #fff;
+
+}
+
+.b1 {
+    font-weight: 600;
+    font-size: large;
+}
+
+.cn-text {
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.bold {
+
+    line-height: 10px;
+    font-weight: 600;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+
+/* main footer */
+
+.main-footer {
+    padding: 0 150px;
+    width: 1519px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left-col {
+    display: flex;
+    width: calc(40%);
+    align-items: center;
+
+}
+
+.left-col li {
+    line-height: 40px;
+}
+
+.left-col ul:hover,
+li:hover {
+    cursor: pointer;
+}
+
+.social-icon img {
+    padding: 6px;
+}
+
+.right-col {
+    display: flex;
+}
+
+.right-col ul li:hover,
+ul h4:hover {
+    cursor: pointer;
+    color: #00a651;
+    transition: .3s ease-in-out;
+
+}
+
+.right-col input {
+    padding: 8px;
+    width: 200px;
+    height: 35px;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+}
+
+.right-col button {
+    background-color: #beddc8;
+    width: 30px;
+    height: 28px;
+    border: #fff;
+    border-radius: 4px;
+}
+
+.right-col button:hover {
+    background-color: #00a651;
+}
+
+/* footer */
+.footer {
+    padding: 0 50px;
+    align-items: center;
+    width: 1519px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e1dedec7;
+}
+
+.left-text a {
+
+    font-weight: 600;
+    font-family: monospace;
+    font-size: large;
+    text-decoration: none;
+    color: #00a651;
+}
+
+.left-text a:hover {
+    color: #065a2e;
+}
+
+.footer-icon ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
